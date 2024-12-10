@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <!-- 任务名称 -->
+    <TextView
+        android:id="@+id/task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="任务名称"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <!-- 任务到期日期 -->
+    <TextView
+        android:id="@+id/task_due_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="到期日期"
+        android:textSize="16sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <!-- 任务优先级 -->
+    <TextView
+        android:id="@+id/task_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="优先级"
+        android:textSize="16sp"
+        android:textColor="#FF5722"
+        android:layout_marginBottom="32dp"
+        android:gravity="center" />
+
+    <!-- 用于填充空白区域的布局，确保按钮在底部 -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 返回按钮 -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="24dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

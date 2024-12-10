@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color> <!-- Example color -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Darker shade for the status bar -->
+    <color name="colorAccent">#03DAC5</color> <!-- Accent color -->
+    <!-- 完成任务时的颜色 -->
+    <color name="completed_task_color">#4CAF50</color> <!-- 绿色 -->
+
+    <!-- 未完成任务时的颜色 -->
+    <color name="pending_task_color">#F44336</color>
+</resources>

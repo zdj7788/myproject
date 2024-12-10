@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <!-- 复选框 -->
+    <CheckBox
+        android:id="@+id/task_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp" />
+
+    <!-- 垂直布局，用于包含任务名称和日期 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <!-- 任务名称 -->
+        <TextView
+            android:id="@+id/task_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:text="任务名称"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:importantForAccessibility="yes"
+            android:contentDescription="任务名称"/>
+
+        <!-- 任务期限（日期） -->
+        <TextView
+            android:id="@+id/task_due_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:text="期限"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+    <!-- 任务优先级 -->
+    <TextView
+        android:id="@+id/task_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="优先级"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_gravity="end" />
+
+    <!-- 删除按钮 -->
+    <ImageButton
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_delete"
+        android:contentDescription="删除任务"
+        android:layout_gravity="end"
+        android:layout_marginStart="8dp" />
+
+    <!-- 编辑按钮 -->
+    <ImageButton
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_edit"
+        android:contentDescription="编辑任务"
+        android:layout_gravity="end" />
+</LinearLayout>

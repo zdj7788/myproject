@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_layout"
+    android:layout_gravity="center">
+
+    <!-- 任务名称输入框 -->
+    <EditText
+        android:id="@+id/edit_task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="任务名称"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#333333"
+        android:layout_marginBottom="12dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="任务名称输入框"/>
+
+    <!-- 截止日期输入框 -->
+    <EditText
+        android:id="@+id/edit_task_due_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="截止日期"
+        android:focusable="false"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#333333"
+        android:layout_marginBottom="12dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="截止日期选择框"
+        android:onClick="openDatePicker"/>
+
+    <!-- 优先级输入框 -->
+    <EditText
+        android:id="@+id/edit_task_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="优先级"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#333333"
+        android:layout_marginBottom="12dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="优先级输入框"/>
+
+    <!-- 保存按钮 -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="保存按钮"/>
+</LinearLayout>

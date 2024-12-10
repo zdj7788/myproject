@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#F1F1F1"/> <!-- 背景颜色 -->
+    <corners android:radius="8dp"/>  <!-- 圆角半径 -->
+    <padding
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp"
+        android:bottom="10dp"/> <!-- 输入框内边距 -->
+</shape>
